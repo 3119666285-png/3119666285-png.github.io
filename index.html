@@ -5,13 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="王柏凯 — 实习摄影师个人作品集 · 影像作品集">
 <title>WANG BOKAI · 作品集</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="style.css">
+<meta property="og:title" content="WANG BOKAI · 作品集">
+<meta property="og:description" content="王柏凯个人摄影作品集，展示电影摄影与影视作品">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
 </head>
 <body>
 
 <!-- Header -->
 <header>
-  <a href="#" class="header-logo">WANG BOKAI <span class="header-logo-cn">王柏凯</span></a>
+  <span class="header-logo">WANG BOKAI <span class="header-logo-cn">王柏凯</span></span>
   <nav class="header-nav">
     <a href="#filmography">FILMOGRAPHY 作品集</a>
     <a href="#about">ABOUT 关于</a>
@@ -49,6 +54,9 @@
     <div class="poster-wall" id="poster-wall">
       <div class="poster-track" id="poster-track">
         <!-- JS 动态生成 14 张海报 -->
+        <noscript>
+          <p style="text-align:center;color:var(--text);padding:40px;">请启用 JavaScript 以浏览作品集内容。</p>
+        </noscript>
       </div>
     </div>
     <div class="scroll-arrow scroll-arrow-left" id="scroll-arrow-left"></div>
@@ -81,14 +89,14 @@
 <section class="contact" id="contact">
   <h2 class="section-title" style="margin-bottom:24px">CONTACT<span class="section-title-cn">联系方式</span></h2>
   <p class="contact-info">
-    19327920134<br>
-    3119666285@qq.com
+    <a href="tel:19327920134">19327920134</a><br>
+    <a href="mailto:3119666285@qq.com">3119666285@qq.com</a>
   </p>
 </section>
 
 <!-- Footer -->
 <footer>
-  &copy; 2026 WANG BOKAI / 王柏凯
+  &copy; <span id="current-year">2026</span> WANG BOKAI / 王柏凯
 </footer>
 
 <!-- Crack Animation Layers -->

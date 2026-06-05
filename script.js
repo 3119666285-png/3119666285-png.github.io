@@ -12,138 +12,153 @@
 
   const projects = [
     {
-      id: 'photo1', name: '当离别开出花', role: 'B机掌机', category: '摄影项目',
-      isPersonal: false,
-      video: BASE + '/摄影项目经历/项目1/单个镜头.mp4',
-      images: [
-        BASE + '/摄影项目经历/项目1/1.jpg',
-        BASE + '/摄影项目经历/项目1/2.jpg',
-        BASE + '/摄影项目经历/项目1/3.jpg'
-      ]
-    },
-    {
-      id: 'photo2', name: '奇门遁甲：逢凶化吉', role: 'B机摄助', category: '摄影项目',
-      isPersonal: false,
-      video: null,
-      images: [
-        BASE + '/摄影项目经历/项目2/1.jpg',
-        BASE + '/摄影项目经历/项目2/2.jpg',
-        BASE + '/摄影项目经历/项目2/3.jpg',
-        BASE + '/摄影项目经历/项目2/4.jpg'
-      ]
-    },
-    {
-      id: 'photo3', name: '九叔归来之湘西赶尸', role: 'B机摄助', category: '摄影项目',
-      isPersonal: false,
-      video: null,
-      images: [
-        BASE + '/摄影项目经历/项目3/1.jpg',
-        BASE + '/摄影项目经历/项目3/2.jpg',
-        BASE + '/摄影项目经历/项目3/3.jpg',
-        BASE + '/摄影项目经历/项目3/4.jpg',
-        BASE + '/摄影项目经历/项目3/5.jpg',
-        BASE + '/摄影项目经历/项目3/6.jpg'
-      ]
-    },
-    {
-      id: 'photo4', name: 'CCTV新质生产力纪录片', role: '摄影', category: '摄影项目',
-      isPersonal: false,
-      video: null,
-      images: [
-        BASE + '/摄影项目经历/项目4/1.jpg',
-        BASE + '/摄影项目经历/项目4/2.jpg',
-        BASE + '/摄影项目经历/项目4/3.jpg',
-        BASE + '/摄影项目经历/项目4/4.png',
-        BASE + '/摄影项目经历/项目4/5.png',
-        BASE + '/摄影项目经历/项目4/6.png',
-        BASE + '/摄影项目经历/项目4/7.png'
-      ]
-    },
-    {
-      id: 'photo5', name: '金甲蕴风华', role: '摄影', category: '摄影项目',
-      isPersonal: false,
-      video: null,
-      images: [
-        BASE + '/摄影项目经历/项目5/1.png',
-        BASE + '/摄影项目经历/项目5/2.jpg',
-        BASE + '/摄影项目经历/项目5/3.png',
-        BASE + '/摄影项目经历/项目5/4.jpg',
-        BASE + '/摄影项目经历/项目5/5.png'
-      ]
-    },
-    {
-      id: 'photo6', name: '这条路', role: '摄影', category: '摄影项目',
-      isPersonal: false,
-      video: BASE + '/摄影项目经历/项目6/8.mp4',
-      images: [
-        BASE + '/摄影项目经历/项目6/1.png',
-        BASE + '/摄影项目经历/项目6/2.png',
-        BASE + '/摄影项目经历/项目6/3.png',
-        BASE + '/摄影项目经历/项目6/4.png',
-        BASE + '/摄影项目经历/项目6/5.png',
-        BASE + '/摄影项目经历/项目6/6.png',
-        BASE + '/摄影项目经历/项目6/7.jpg'
-      ]
-    },
-    {
-      id: 'light1', name: '古村迷宅', role: '灯光助理', category: '灯光项目',
-      isPersonal: false,
-      video: null,
-      images: [
-        BASE + '/灯光项目经历/项目1/58f2bc9b07bba969572f4dbb4576eb15.JPG',
-        BASE + '/灯光项目经历/项目1/c67cd1871ce18d0366aaef11b7d9a037.JPG',
-        BASE + '/灯光项目经历/项目1/DSC03690.jpg',
-        BASE + '/灯光项目经历/项目1/mmexport1718061980760.jpg'
-      ]
-    },
-    {
-      id: 'light2', name: '三养火鸡辣酱广告', role: '灯光助理', category: '灯光项目',
-      isPersonal: false,
-      video: null,
-      images: [
-        BASE + '/灯光项目经历/项目2/1.png',
-        BASE + '/灯光项目经历/项目2/2.png',
-        BASE + '/灯光项目经历/项目2/3.png',
-        BASE + '/灯光项目经历/项目2/4.jpg'
-      ]
-    },
-    {
-      id: 'actor1', name: '闪耀的警徽（B组）', role: '演员副导演', category: '演员项目',
-      isPersonal: false,
-      video: null,
-      images: [
-        BASE + '/演员副导演项目经历/1.jpg'
-      ]
-    },
-    {
       id: 'work1', name: '个人VCR', role: '导演/编剧/摄影', category: '个人作品',
       isPersonal: true,
+      description: '进入学院学习摄影后对于个人的总结',
       video: null,
-      images: Array.from({length: 9}, (_, i) => BASE + '/个人作品/作品1/' + (i+1) + '.png')
+      images: Array.from({length: 9}, (_, i) => BASE + '/个人作品/作品1/' + (i+1) + '.webp')
     },
     {
       id: 'work2', name: '一条路', role: '导演/编剧/摄影/灯光', category: '个人作品',
       isPersonal: true,
+      description: '剧组杀青后现实与理想的落差',
       video: null,
-      images: Array.from({length: 9}, (_, i) => BASE + '/个人作品/作品2/' + (i+1) + '.png')
+      images: Array.from({length: 9}, (_, i) => BASE + '/个人作品/作品2/' + (i+1) + '.webp')
     },
     {
       id: 'work3', name: '录音', role: '导演/编剧/摄影/灯光', category: '个人作品',
       isPersonal: true,
+      description: '自主创作剧本',
       video: null,
-      images: Array.from({length: 9}, (_, i) => BASE + '/个人作品/作品3/' + (i+1) + '.png')
+      images: Array.from({length: 9}, (_, i) => BASE + '/个人作品/作品3/' + (i+1) + '.webp')
     },
     {
       id: 'work4', name: '时间倒数', role: '导演/编剧', category: '个人作品',
       isPersonal: true,
+      description: '毕业设计，个人完成全流程AIGC短片',
       video: null,
-      images: Array.from({length: 9}, (_, i) => BASE + '/个人作品/作品4/' + (i+1) + '.png')
+      images: Array.from({length: 9}, (_, i) => BASE + '/个人作品/作品4/' + (i+1) + '.webp')
     },
     {
       id: 'work5', name: '片刻', role: '灯光师', category: '个人作品',
       isPersonal: true,
+      description: '朋友的毕设，夜拍日的灯光',
       video: null,
-      images: Array.from({length: 9}, (_, i) => BASE + '/个人作品/作品5/' + (i+1) + '.png')
+      images: Array.from({length: 9}, (_, i) => BASE + '/个人作品/作品5/' + (i+1) + '.webp')
+    },
+
+{
+      id: 'photo1', name: '当离别开出花', role: 'B机掌机', category: '摄影项目',
+      isPersonal: false,
+      description: '院线电影，湖北省电影精品重点项目，省级国家电影事业发展专项资金优秀剧本扶持',
+      video: BASE + '/摄影项目经历/项目1/单个镜头.mp4',
+      images: [
+        BASE + '/摄影项目经历/项目1/1.webp',
+        BASE + '/摄影项目经历/项目1/2.webp',
+        BASE + '/摄影项目经历/项目1/3.webp'
+      ]
+    },
+{
+      id: 'photo2', name: '奇门遁甲：逢凶化吉', role: 'B机摄助', category: '摄影项目',
+      description: '爱奇艺出品网络大电影',
+      isPersonal: false,
+      video: null,
+      images: [
+        BASE + '/摄影项目经历/项目2/1.webp',
+        BASE + '/摄影项目经历/项目2/2.webp',
+        BASE + '/摄影项目经历/项目2/3.webp',
+        BASE + '/摄影项目经历/项目2/4.webp'
+      ]
+    },
+{
+      id: 'photo3', name: '九叔归来之湘西赶尸', role: 'B机摄助', category: '摄影项目',
+      isPersonal: false,
+      description: '腾讯视频九叔归来系列第四部',
+      video: null,
+      images: [
+        BASE + '/摄影项目经历/项目3/1.webp',
+        BASE + '/摄影项目经历/项目3/2.webp',
+        BASE + '/摄影项目经历/项目3/3.webp',
+        BASE + '/摄影项目经历/项目3/4.webp',
+        BASE + '/摄影项目经历/项目3/5.webp',
+        BASE + '/摄影项目经历/项目3/6.webp'
+      ]
+    },
+{
+      id: 'photo4', name: 'CCTV新质生产力纪录片', role: '摄影', category: '摄影项目',
+      description: 'CCTV新质生产力 · 强国制造系列百集纪录片',
+      isPersonal: false,
+      video: null,
+      images: [
+        BASE + '/摄影项目经历/项目4/1.webp',
+        BASE + '/摄影项目经历/项目4/2.webp',
+        BASE + '/摄影项目经历/项目4/3.webp',
+        BASE + '/摄影项目经历/项目4/4.webp',
+        BASE + '/摄影项目经历/项目4/5.webp',
+        BASE + '/摄影项目经历/项目4/6.webp',
+        BASE + '/摄影项目经历/项目4/7.webp'
+      ]
+    },
+{
+      id: 'photo5', name: '金甲蕴风华', role: '摄影', category: '摄影项目',
+      description: '《匠心之路》栏目',
+      isPersonal: false,
+      video: null,
+      images: [
+        BASE + '/摄影项目经历/项目5/1.webp',
+        BASE + '/摄影项目经历/项目5/2.webp',
+        BASE + '/摄影项目经历/项目5/3.webp',
+        BASE + '/摄影项目经历/项目5/4.webp',
+        BASE + '/摄影项目经历/项目5/5.webp'
+      ]
+    },
+{
+      id: 'photo6', name: '这条路', role: '摄影', category: '摄影项目',
+      isPersonal: false,
+      description: '中国建材总院75周年纪念影片，中央企业优秀故事作品二等奖',
+      video: BASE + '/摄影项目经历/项目6/8.mp4',
+      images: [
+        BASE + '/摄影项目经历/项目6/1.webp',
+        BASE + '/摄影项目经历/项目6/2.webp',
+        BASE + '/摄影项目经历/项目6/3.webp',
+        BASE + '/摄影项目经历/项目6/4.webp',
+        BASE + '/摄影项目经历/项目6/5.webp',
+        BASE + '/摄影项目经历/项目6/6.webp',
+        BASE + '/摄影项目经历/项目6/7.webp'
+      ]
+    },
+{
+      id: 'light1', name: '古村迷宅', role: '灯光助理', category: '灯光项目',
+      isPersonal: false,
+      description: '院线电影',
+      video: null,
+      images: [
+        BASE + '/灯光项目经历/项目1/58f2bc9b07bba969572f4dbb4576eb15.webp',
+        BASE + '/灯光项目经历/项目1/c67cd1871ce18d0366aaef11b7d9a037.webp',
+        BASE + '/灯光项目经历/项目1/DSC03690.webp',
+        BASE + '/灯光项目经历/项目1/mmexport1718061980760.webp'
+      ]
+    },
+{
+      id: 'light2', name: '三养火鸡辣酱广告', role: '灯光助理', category: '灯光项目',
+      description: '抖音双11三养火鸡辣酱广告片',
+      isPersonal: false,
+      video: null,
+      images: [
+        BASE + '/灯光项目经历/项目2/1.webp',
+        BASE + '/灯光项目经历/项目2/2.webp',
+        BASE + '/灯光项目经历/项目2/3.webp',
+        BASE + '/灯光项目经历/项目2/4.webp'
+      ]
+    },
+{
+      id: 'actor1', name: '闪耀的警徽（B组）', role: '演员副导演', category: '演员项目',
+      isPersonal: false,
+      description: '爱奇艺长篇电视剧。负责现场演员调度、拍摄执行与沟通协调',
+      video: null,
+      images: [
+        BASE + '/演员副导演项目经历/1.webp'
+      ]
     }
   ];
 
@@ -187,7 +202,8 @@
     el.innerHTML =
       '<div class="poster-name">' + proj.name + '</div>' +
       '<div class="poster-separator"></div>' +
-      '<div class="poster-role">' + proj.role + '</div>';
+      '<div class="poster-role">' + proj.role + '</div>' +
+      (proj.description ? '<div class="poster-description">' + proj.description + '</div>' : '');
 
     el.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -215,6 +231,14 @@
       e.preventDefault();
       posterWall.scrollLeft += e.deltaY;
     }, { passive: false });
+
+    // Mobile scroll hint
+    if (window.innerWidth <= 768) {
+      const hint = document.createElement('div');
+      hint.className = 'mobile-scroll-hint';
+      hint.textContent = '← 滑动查看更多 →';
+      posterWall.parentElement.appendChild(hint);
+    }
   })();
 
   document.getElementById('scroll-arrow-left').addEventListener('click', () => {
@@ -384,6 +408,17 @@
 
     galleryTitle.textContent = proj.name;
     galleryRole.textContent = proj.role;
+
+    let descEl = document.getElementById('gallery-desc');
+    if (!descEl) {
+      descEl = document.createElement('div');
+      descEl.id = 'gallery-desc';
+      descEl.className = 'gallery-topbar-desc';
+      galleryRole.parentNode.appendChild(descEl);
+    }
+    descEl.textContent = proj.description || '';
+    descEl.style.display = proj.description ? 'block' : 'none';
+
     updateCounter();
 
     // Toggle grid button visibility
@@ -479,7 +514,7 @@
         const wrap = document.createElement('div');
         wrap.className = 'gallery-video-wrap';
         wrap.setAttribute('data-media-index', i);
-        wrap.innerHTML = '<video src="' + media.src + '" controls preload="metadata"></video>';
+        wrap.innerHTML = '<video src="' + media.src + '" controls preload="metadata" poster="' + currentProject.images[0] + '"></video>';
         galleryScrollInner.appendChild(wrap);
       } else {
         const wrap = document.createElement('div');
@@ -533,15 +568,27 @@
     fullscreenIndex = index;
     fullscreenMediaList = galleryMediaList.filter(m => m.type === 'image');
     const imgIdx = fullscreenMediaList.findIndex(m => m.src === galleryMediaList[index].src);
-    if (imgIdx >= 0) fullscreenIndex = imgIdx;
+    if (imgIdx === -1) return;
+    fullscreenIndex = imgIdx;
 
     if (fullscreenMediaList.length === 0) return;
+
+    let fsDesc = document.getElementById('fullscreen-desc');
+    if (!fsDesc) {
+      fsDesc = document.createElement('div');
+      fsDesc.id = 'fullscreen-desc';
+      fsDesc.className = 'fullscreen-desc';
+      fullscreenViewer.appendChild(fsDesc);
+    }
+    fsDesc.textContent = (currentProject && currentProject.description) || '';
+
     showFullscreenImage();
     fullscreenViewer.classList.add('active');
   }
 
   function showFullscreenImage() {
     fullscreenImg.src = fullscreenMediaList[fullscreenIndex].src;
+    fullscreenImg.alt = (currentProject && currentProject.name) || '作品图片';
     fullscreenCounter.textContent = (fullscreenIndex + 1) + ' / ' + fullscreenMediaList.length;
   }
 
@@ -658,5 +705,7 @@
   mobileMenuLinks.forEach(link => {
     link.addEventListener('click', () => mobileMenu.classList.remove('active'));
   });
+
+  document.getElementById('current-year').textContent = new Date().getFullYear();
 
   })();
