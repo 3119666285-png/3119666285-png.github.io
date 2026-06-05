@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="王柏凯 — 实习摄影师个人作品集 · 影像作品集">
+<title>WANG BOKAI · 作品集</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <a href="#" class="header-logo">WANG BOKAI <span class="header-logo-cn">王柏凯</span></a>
+  <nav class="header-nav">
+    <a href="#filmography">FILMOGRAPHY 作品集</a>
+    <a href="#about">ABOUT 关于</a>
+    <a href="#contact">CONTACT 联系</a>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="菜单">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-menu-close" id="mobile-menu-close">&times;</button>
+  <a href="#filmography">FILMOGRAPHY 作品集</a>
+  <a href="#about">ABOUT 关于</a>
+  <a href="#contact">CONTACT 联系</a>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <h1 class="hero-title">CINEMA PORTFOLIO<br><span class="hero-title-cn">影像作品集</span></h1>
+  <p class="hero-name">王柏凯</p>
+  <p class="hero-subtitle">实习摄影师</p>
+  <div class="hero-arrow"></div>
+</section>
+
+<!-- Filmmography -->
+<section class="filmography" id="filmography">
+  <div class="filmography-header">
+    <h2 class="section-title">FILMOGRAPHY<span class="section-title-cn">影像作品</span></h2>
+    <p class="section-subtitle">14 个项目 · 摄影 · 灯光 · 演员</p>
+  </div>
+
+  <div class="poster-wall-wrapper">
+    <div class="poster-wall" id="poster-wall">
+      <div class="poster-track" id="poster-track">
+        <!-- JS 动态生成 14 张海报 -->
+      </div>
+    </div>
+    <div class="scroll-arrow scroll-arrow-left" id="scroll-arrow-left"></div>
+    <div class="scroll-arrow scroll-arrow-right" id="scroll-arrow-right"></div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+  <div class="about-content">
+    <h2 class="section-title" style="margin-bottom:28px">ABOUT<span class="section-title-cn">关于我</span></h2>
+    <p class="about-text">
+      多媒体设计与制作专业应届生，拥有从院线电影到TVC广告等多类型项目实战经验。
+      可独立完成掌机拍摄，具备基础的灯光设计与执行能力。熟练操作ARRI、SONY等
+      主流电影摄影机系统，可以适应高强度、快节奏的剧组工作模式。热爱影像，对画面有持续追求。
+    </p>
+    <div class="about-tags">
+      <span class="about-tag">ARRI Alexa Mini</span>
+      <span class="about-tag">SONY FX6/FX3</span>
+      <span class="about-tag">SONY CineAltaB</span>
+      <span class="about-tag">灯光基础</span>
+      <span class="about-tag">DIT</span>
+      <span class="about-tag">剪辑</span>
+      <span class="about-tag">C1驾照</span>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <h2 class="section-title" style="margin-bottom:24px">CONTACT<span class="section-title-cn">联系方式</span></h2>
+  <p class="contact-info">
+    19327920134<br>
+    3119666285@qq.com
+  </p>
+</section>
+
+<!-- Footer -->
+<footer>
+  &copy; 2026 WANG BOKAI / 王柏凯
+</footer>
+
+<!-- Crack Animation Layers -->
+<div class="crack-line" id="crack-line"></div>
+<div class="crack-beam" id="crack-beam"></div>
+<div class="crack-layer" id="crack-upper"></div>
+<div class="crack-layer" id="crack-lower"></div>
+
+<!-- Gallery Overlay -->
+<div class="gallery-overlay" id="gallery-overlay">
+  <div class="gallery-topbar" id="gallery-topbar">
+    <div class="gallery-topbar-left">
+      <span class="gallery-topbar-title" id="gallery-title"></span>
+      <span class="gallery-topbar-role" id="gallery-role"></span>
+    </div>
+    <div class="gallery-topbar-center" id="gallery-counter">1 / 1</div>
+    <div class="gallery-topbar-right">
+      <button class="grid-toggle" id="grid-toggle" style="display:none">全宽浏览</button>
+      <button class="gallery-close" id="gallery-close">&times;</button>
+    </div>
+  </div>
+  <div class="gallery-progress-bar">
+    <div class="gallery-progress-fill" id="gallery-progress-fill"></div>
+  </div>
+
+  <!-- 九宫格 -->
+  <div class="gallery-grid" id="gallery-grid"></div>
+
+  <!-- 全宽滚动 -->
+  <div class="gallery-scroll" id="gallery-scroll" style="display:none">
+    <div class="gallery-scroll-inner" id="gallery-scroll-inner"></div>
+  </div>
+</div>
+
+<!-- Fullscreen Viewer -->
+<div class="fullscreen-viewer" id="fullscreen-viewer">
+  <button class="fullscreen-close" id="fullscreen-close">&times;</button>
+  <span class="fullscreen-counter" id="fullscreen-counter">1 / 1</span>
+  <img src="" alt="" id="fullscreen-img">
+  <div class="fullscreen-nav prev" id="fullscreen-prev">&lsaquo;</div>
+  <div class="fullscreen-nav next" id="fullscreen-next">&rsaquo;</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
